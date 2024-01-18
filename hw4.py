@@ -1,32 +1,30 @@
-
-class BankAccount:
+class SavingAccount:
     pass
 
-class SavingAccount(BankAccount):
-    pass
-
-class CheckingAccount(BankAccount):
-    pass
-
-class InterestBearingItem:
-    pass
-
-class Asset:
-    pass
-
-class RealEstate:
-    pass
-
-class InsurableItem:
+class CheckingAccount:
     pass
 
 class Stock:
     pass
 
-class Security:
+class Bond:
     pass
 
-class Band:
+class RealEstate:
     pass
 
+class BankAccount(SavingAccount, CheckingAccount):
+    pass
+
+class Security(Stock, Bond):
+    pass
+
+class InterestBearingItem(BankAccount, Security):
+    pass
+
+class Asset(BankAccount, RealEstate, Security):
+    pass
+
+class InsurableItem(RealEstate, BankAccount):
+    pass
 
