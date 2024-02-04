@@ -10,7 +10,7 @@ class SuperHero:
     def name(self):
         print(self.name)
 
-    def age_multiplier(self):
+    def health_multiplier(self):
         print(self.health_points * 2)
 
     def __str__(self):
@@ -25,6 +25,6 @@ Hero = SuperHero('Bruce Wayne', 'Batman', \
 
 print(Hero)
 print(Hero.name)
-Hero.age_multiplier()
+Hero.health_multiplier()
 print(len(Hero))
 
