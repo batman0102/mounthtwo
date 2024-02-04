@@ -28,3 +28,6 @@ class Asset(BankAccount, RealEstate, Security):
 class InsurableItem(RealEstate, BankAccount):
     pass
 
+hum = BankAccount('rus', 500)
+
+hum.copy()
